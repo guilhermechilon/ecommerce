@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GreenieFood Delivery</title>
+	<link rel="icon" href="imagem/logo.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>  <!-- CSS do materialize-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estiloIndex.css"/>
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script> <!-- Biblioteca para facilitar o uso de javascript-->
+	<script type="text/javascript" src="js/materialize.min.js"></script>  <!-- Biblioteca JS do materialize-->
+
+
+</head>
+
+<body background="imagem/back1.png">
+	<style>
+	* {box-sizing: border-box;}
+
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.topnav .search-container {
+	  float: left;
+	}
+
+
+	@media screen and (max-width: 600px) {
+	  .topnav .search-container {
+	    float: none;
+	  }
+	  .topnav input[type=text] {
+	    border: 1px solid #ccc;  
+	  }
+	}
+	</style>
+	</head>
+	<body>
+
+	<div class="topnav">
+	  <div class="search-container">
+	    <form action="/action_page.php">
+	      <input type="text" style= "color: #000000;" placeholder="Procurar.." name="Procurar">
+	    </form>
+	  </div>
+	</div>
+
+
+	<nav>
+	  <!-- Lista de menus para Desktop -->
+	  <ul class="right hide-on-med-and-down">
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="Produtos.html">Produtos</a></li>
+	    <li><a href="mapa.html">Mapa</a></li>
+	    <li><a href="contato.html">Contato</a></li>
+	  </ul>
+
+	  <!-- Lista de menus para Mobile -->
+	  <ul id="slide-out" class="side-nav">
+	   	<li><a href="index.html">Home</a></li>
+	    <li><a href="Produtos.html">Produtos</a></li>
+	    <li><a href="mapa.html">Mapa</a></li>
+	    <li><a href="contato.html">Contato</a></li>
+	  </ul>
+	  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+	</nav>
+
+	
+	<div class="map-responsive">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.748379255935!2d-46.516176385106256!3d-18.58537938737127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ae8ad3071080b7%3A0x6a40af65d121f26b!2sP%C3%A1tio+Central+Shopping!5e0!3m2!1spt-BR!2sbr!4v1464959024805" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	</div>
+
+	<footer>
+		<div class="rod">
+			<span><a class="rodm" href="Index.html">Home |</a></span> 
+	        <span><a class="rodm" href="contato.html">Contato |</a></span> 
+	        <span><a class="rodm" href="#">Termos e condições |</a></span> 
+	        <span><a class="rodm" href="#">Política de Privacidade</a></span> 
+	    </div>
+	</footer>
+
+
+
+
+	<script type="text/javascript">
+		 /** Inicializa o Menu Responsivo **/
+		 $(".button-collapse").sideNav();
+	</script>
+
+</body>
+
+</html>

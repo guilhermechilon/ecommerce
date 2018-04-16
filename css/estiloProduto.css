@@ -1,0 +1,81 @@
+
+body{
+	margin:0;
+	background-image: url("http://www.mistralsolutions.com/wp-content/uploads/2014/03/Hardware-software.jpg");
+}
+
+nav{
+	background: #049F00;
+}
+a{
+	text-decoration: none;
+}
+
+h1{
+	margin: 0px;
+}
+
+h4{
+	color: #000000;
+}
+
+.centro{
+	margin: auto;
+	max-width: 1500px;
+	max-height: auto;
+	background-image: url("http://www.mistralsolutions.com/wp-content/uploads/2014/03/Hardware-software.jpg");
+}
+
+.linha{
+
+	text-align: center;
+	background: #049F00;
+}
+.caixa{
+	text-align: center;
+	padding: 30px;
+}
+
+.centro img {
+   max-width: 100%;
+   margin-top: -60px;
+   padding: 30px;
+}
+
+.divspoiler{
+	padding: 15px;
+}
+
+.butons{
+	padding: 10px;
+}
+
+footer {
+    clear: both;
+    padding-top: 20px;
+    bottom: 0px;
+    background-color: #049F00;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+
+    box-shadow: 0px 0px 1em #666;
+    -webkit-box-shadow: 0px 0px 1em #666;
+    -moz-box-shadow: 0px 0px 1em #666;
+}
+
+footer .rod{
+
+	margin: auto;
+	max-width: 1000px;
+	max-height: auto;
+}
+
+footer .rodm{
+
+	margin: auto;
+	color: black;
+    
+    font-size: 16px;
+}

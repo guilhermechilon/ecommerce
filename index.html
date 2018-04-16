@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>e-Hard.Ware</title>
+	<link rel="icon" href="imagem/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>  <!-- CSS do materialize-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estiloIndex.css"/>
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script> <!-- Biblioteca para facilitar o uso de javascript-->
+	<script type="text/javascript" src="js/materialize.min.js"></script>  <!-- Biblioteca JS do materialize-->
+</head>
+	<style>
+	* {box-sizing: border-box;}
+
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.topnav .search-container {
+	  float: left;
+	}
+
+
+	@media screen and (max-width: 600px) {
+	  .topnav .search-container {
+	    float: none;
+	  }
+	  .topnav input[type=text] {
+	    border: 1px solid #ccc;  
+	  }
+	}
+	</style>
+	</head>
+	<body>
+
+	<div class="topnav">
+	  <div class="search-container">
+	    <form action="/action_page.php">
+	      <input type="text" style= "color: #000000;" placeholder="Procurar.." name="Procurar">
+	    </form>
+	  </div>
+	</div>
+
+	<nav>
+	  <!-- Lista de menus para Desktop -->
+	  <ul class="right hide-on-med-and-down">
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="Produtos.html">Produtos</a></li>
+	    <li><a href="mapa.html">Mapa</a></li>
+	    <li><a href="contato.html">Contato</a></li>
+	  </ul>
+
+	  <!-- Lista de menus para Mobile -->
+	  <ul id="slide-out" class="side-nav">
+	   	<li><a href="index.html">Home</a></li>
+	    <li><a href="Produtos.html">Produtos</a></li>
+	    <li><a href="mapa.html">Mapa</a></li>
+	    <li><a href="contato.html">Contato</a></li>
+	  </ul>
+	  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+	</nav>
+
+	<div class="meio">
+		
+			<div class="linha">
+					<h5><font color="#000000">Produtos em destaque</font></h5>
+			</div>
+
+			<div class="slider">
+
+					 <ul class="slides">
+					     <li>
+					        <img src="imagem/1.png"> <!-- image aleatoria -->
+					        <div class="caption center-align">
+					          <h3 style="color: #FFFFFF;">Mother Boards</h3> <!-- texto de titulo da imagem -->
+					          <h5 class="light grey-text text-lighten-3"></h5> <!-- texto de sub-titulo da imagem -->
+					        </div>
+					     </li>
+
+					      <li>
+					        <img src="imagem/2.png"> <!-- image aleatoria -->
+					        <div class="caption center-align">
+					          <h3 style="color: #000000;">Placas de Video</h3> <!-- texto de titulo da imagem -->
+					          <h5 class="light grey-text text-lighten-3"></h5> <!-- texto de sub-titulo da imagem -->
+					        </div>
+					      </li>
+
+					      <li>
+					        <img src="imagem/3.jpg"> <!-- image aleatoria -->
+					        <div class="caption center-align">
+					          <h3 style="color: #000000;">Processadores</h3> <!-- texto de titulo da imagem -->
+					          <h5 class="light grey-text text-lighten-3"></h5> <!-- texto de sub-titulo da imagem -->
+					        </div>
+					      </li>
+					       <!-- Para cada elemento do slider adicione a tag <li> e dentro dela coloque sua imagem e seu texto -->
+					   </ul>	
+			</div>
+	</div>
+
+	<div class="baixo">
+
+		<div class="linha">
+					<h5><font color="#000000">Sobre a e-Hard.Ware</font></h5>
+			</div>
+		
+		<div class="row"> <!-- linha-->
+				<div class="col-4">
+
+						<div class="caixa">
+							<img src="imagem/4.png" width="700" height="300">
+						
+							<h4 style="text-align: center; color: #000000;">Loja Diamante</h4>
+							<!-- Lorem + tab = cria esse texto-->
+							<p style="text-align: justify; color: #000000;">Ganhadora do Pêmio e-Bit 2017, destaque como loja de eletrônicos categoria Hardwares e Periféricos.</p>
+
+						</div>
+				</div>
+				<div class="col-4">
+						<div class="caixa">
+							<img src="imagem/5.jpg" width="700" height="300">
+						
+
+							<h4 style="text-align: center; color: #000000;">Loja Blindada</h4>
+							<!-- Lorem + tab = cria esse texto-->
+							<p style="text-align: justify; color: #000000;">A e-Hard.Ware preza sempre pela segurança de seus usuários, sem vazão de dados, 100% protegida.</p>
+
+						</div>
+				</div>
+				<div class="col-4">
+
+						<div class="caixa">
+							<img src="imagem/6.png" width="700" height="300">
+						
+
+							<h4 style="text-align: center; color: #000000;">Veteranos ++</h4>
+							<!-- Lorem + tab = cria esse texto-->
+							<p style="text-align: justify; color: #000000;">Desde de 2002 trabalhando no ramo de e-commerce, somos mais que profissionais no que fazemos.</p>
+
+						</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="MFundo">
+		<div class="col-6">
+			<img src="imagem/logof.png" width="360" height="240" align="right">
+		</div>
+		<div class="col-4">
+				
+				<p text-align="justify" style="color: #000000;"><font size="5">Seja para trabalhar, jogar, programar ou qualquer outra coisa que deseje, se você procura produtos de qualidade para montar sua máquina blindona, aqui é seu lugar, se achega e venha conhecer nossos produtos e preços,se encontrar preços mais baixos nós cobrimos a oferta, garanto e provo, aqui tem qualidade. 
+					<br>
+					<br>
+					<h5></h5>
+				</font></p>
+				
+		</div>
+	</div>
+
+	<footer>
+		<div class="rod">
+			<span><a class="rodm" href="Index.html">Home |</a></span> 
+	        <span><a class="rodm" href="contato.html">Contato |</a></span> 
+	        <span><a class="rodm" href="#">Termos e condições |</a></span> 
+	        <span><a class="rodm" href="#">Política de Privacidade</a></span> 
+	    </div>
+	</footer>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		 /** Inicializa o efeito Parallax **/
+		  $(document).ready(function(){
+      		$('.parallax').parallax();
+    	 });
+	</script>
+
+	<script type="text/javascript">
+		 /** Inicializa o Slider **/
+		 $(document).ready(function(){
+      		$('.slider').slider({full_width: true}); 
+    	});
+	</script>
+
+	<script type="text/javascript">
+		 /** Inicializa o Menu Responsivo **/
+		 $(".button-collapse").sideNav();
+	</script>
+
+</body>
+
+</html>

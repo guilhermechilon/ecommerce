@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Produtos</title>
+	<link rel="icon" href="imagem/logo.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>  <!-- CSS do materialize-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estiloProduto.css"/>
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script> <!-- Biblioteca para facilitar o uso de javascript-->
+	<script type="text/javascript" src="js/materialize.min.js"></script>  <!-- Biblioteca JS do materialize-->
+</head>
+
+<body background="imagem/back1.png">
+	<style>
+	* {box-sizing: border-box;}
+
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.topnav .search-container {
+	  float: left;
+	}
+
+
+	@media screen and (max-width: 600px) {
+	  .topnav .search-container {
+	    float: none;
+	  }
+	  .topnav input[type=text] {
+	    border: 1px solid #ccc;  
+	  }
+	}
+	</style>
+	</head>
+	<body>
+
+	<div class="topnav">
+	  <div class="search-container">
+	    <form action="/action_page.php">
+	      <input type="text" style= "color: #000000;" placeholder="Procurar.." name="Procurar">
+	    </form>
+	  </div>
+	</div>
+
+	<div>
+		<nav>
+		  <!-- Lista de menus para Desktop -->
+		  <ul class="right hide-on-med-and-down">
+		    <li><a href="index.html">Home</a></li>
+		    <li><a href="Produtos.html">Produtos</a></li>
+		    <li><a href="mapa.html">Mapa</a></li>
+		    <li><a href="contato.html">Contato</a></li>
+		  </ul>
+
+		  <!-- Lista de menus para Mobile -->
+		  <ul id="slide-out" class="side-nav">
+		   	<li><a href="index.html">Home</a></li>
+		    <li><a href="Produtos.html">Produtos</a></li>
+		    <li><a href="Mapa.html">Mapa</a></li>
+		    <li><a href="contato.html">Contato</a></li>
+		  </ul>
+		  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		</nav>
+	</div>
+
+	<div>
+
+			<div class="slider">
+
+					 <ul class="slides">
+					     <li>
+					        <img src="imagem/1.png"> <!-- image aleatoria -->
+					        <div class="caption center-align">
+					          <h3 style="color: #000000;">Mother Boards</h3> <!-- texto de titulo da imagem -->
+					          <h5 class="light grey-text text-lighten-3"></h5> <!-- texto de sub-titulo da imagem -->
+					        </div>
+					     </li>
+
+					      <li>
+					        <img src="imagem/2.png"> <!-- image aleatoria -->
+					        <div class="caption center-align">
+					          <h3 style="color: #000000;">Placas de Video</h3> <!-- texto de titulo da imagem -->
+					          <h5 class="light grey-text text-lighten-3"></h5> <!-- texto de sub-titulo da imagem -->
+					        </div>
+					      </li>
+
+					      <li>
+					        <img src="imagem/3.jpg"> <!-- image aleatoria -->
+					        <div class="caption center-align">
+					          <h3 style="color: #000000;">Processadores</h3> <!-- texto de titulo da imagem -->
+					          <h5 class="light grey-text text-lighten-3"></h5> <!-- texto de sub-titulo da imagem -->
+					        </div>
+					      </li>
+					       <!-- Para cada elemento do slider adicione a tag <li> e dentro dela coloque sua imagem e seu texto -->
+					   </ul>	
+			</div>
+	</div>
+
+	<div class="centro">
+
+		<div class="linha">
+					<h5><font color="#000000">Destaque</font></h5>
+		</div>
+
+			<div class="row"> <!-- linha-->
+					<div class="col-4">
+
+							<div class="caixa">
+								<img src="imagem/Pecas/1.jpg" width="700" height="300">
+								
+
+								<h4 style="text-align: center;">Processador Core i3</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+
+								<p>Modelo
+										Intel Core i3-6100 
+										
+										DMI3
+										8 GT/s 
+										
+										Núcleos
+										2
+										
+										Threads
+										4
+										
+										Frequência baseada em processador
+										3.7 GHz
+										
+										TDP
+										51 W 
+										
+										Gráficos do processador
+										Intel® HD Graphics 530 
+										
+										Frequência da base gráfica
+										350 MHz 
+										
+										Máxima frequência dinâmica da placa gráfica
+										1.05 GHz 
+										
+										Quantidade máxima de memória gráfica de vídeo
+										1.7 GB
+										
+										Saída gráfica
+										eDP/DP/HDMI/DVI 
+										
+										Suporte para 4K
+										Yes, 60Hz 
+										
+										Resolução máxima (Intel® WiDi)
+										1080p 
+										
+										Resolução máxima (HDMI 1.4)
+										4096x2304@24Hz 
+										
+										Resolução máxima (DP)
+										4096x2304@60Hz 
+										
+										Resolução máxima (eDP - tela plana integrada)
+										4096x2304@60Hz 
+										
+										Suporte para DirectX
+										12
+										
+										Suporte para OpenGL
+										4.4 
+										
+										Telas suportadas
+										3</p>
+
+								</div></div>
+
+								<div>
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>					
+								</div>								
+							</div>
+					</div>
+
+					<div class="col-4">
+							<div class="caixa">
+								<img src="imagem/Pecas/6.jpg" width="700" height="300">
+
+								<h4 style="text-align: center;">Processador Core i5</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+								<p>Marca
+										Intel
+										
+										Serie
+										Core i5
+										
+										CPU
+										Core i5-6500 6M
+										
+										Soquete CPU
+										LGA 1151
+										
+										Nome
+										Skylake
+										
+										Núcleos
+										4 (Quad-Core)
+										
+										Threads
+										4 (Quad-Core)
+										
+										Frequencia Base
+										3.2 GHz
+										
+										Frequencia Avançada
+										3.6 GHz
+										
+										Litografia
+										14nm
+										
+										Gráfico Integrado
+										Intel® HD Graphics 530
+										
+										Thermal Design Power (TDP)
+										65 W</p>
+								</div></div>
+
+								<div>
+
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>
+						
+								</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+
+							<div class="caixa">
+								<img src="imagem/Pecas/8.jpg" width="700" height="300">
+
+								<h4 style="text-align: center;">Processador Core i7</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+
+								<p>Série
+										core i7
+										
+										Nome
+										i7-6700
+										
+										Modelo
+										BX80662I76700
+										
+										CPU Tipo de soquete
+										LGA 1151
+										
+										Série
+										Skylake
+										
+										Núcleos
+										4
+										
+										Threads
+										8
+										
+										Frequência de operação
+										3.4 GHz
+										
+										Frequencia Máxima
+										4.00 GHz
+										
+										Cachê L2
+										4 x 256KB
+										
+										cachê L3
+										8MB
+										
+										Litografia
+										14nm
+										
+										Suporte Hyper-Threading
+										sim
+										
+										Gráficos integrados
+										Intel HD 530 Gráficos
+										
+										Frequência Base de Dados de Gráficos
+										350 MHz
+										
+										Frequência gráficos Max Dinâmico
+										1.15 GHz
+										
+										Thermal Design Power
+										65W</p>
+								</div></div>
+
+								<div>
+
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>
+						
+								</div>
+							</div>
+					</div>
+			</div>
+
+			<div class="row"> <!-- linha-->
+					<div class="col-4">
+
+							<div class="caixa">
+								<img src="imagem/1.jpg" width="700" height="300">
+								
+
+								<h4 style="text-align: center;">Placa Mãe Asus</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+
+								<p> Placa mãe Asus H61M-A/USB3, para processadores Intel Core series i7, i5, i3 e Pentium com soquete LGA-1155.
+										- 2 slots de memória DDR3 2200 (O.C.) / 2133 (O.C.) / 2000 (O.C.) / 1866 (O.C.) / 1600 / 1333 / 1066 MHz. Suporta até 16 GB no total.
+										- Vídeo integrado com as portas VGA, DVI e HDMI, com resolução máxima de 2048 x 1536 pixels.
+										- Network iControl permitindo controle de banda de rede em tempo real, através de software.
+										- Sistema de som integrado com 7.1 canais, através de codec ALC 887.
+										- Possui 4 portas Serial ATA II (internas), com taxas de 3.0 Gbps.
+										- 7 portas USB (4 portas traseiras e 3 internas) sendo 2 USB 3.0 com transferência de dados rápida de até 5 Gbps.
+										- Tecnologia ASUS UEFI BIOS que fornece uma interface gráfica a BIOS permitindo controla-la através do mouse.
+										- 1 slot PCI Express x16 no padrão de barramento PCI Express 3.0 que proporciona 2 vezes mais desempenho que o padrão anterior, atingindo um máximo de 32 GB/s, o dobro da 16 GB/s com PCIe 2.0 (no modo x16).
+										
+										Características técnicas:
+										- Código do produto no fabricante: H61M-A/USB3 (90MB0FD0-M0EAY0)
+										- Formato: uATX (22.6 x 18 cm)
+										- Chipset: Intel H61(B3)
+										
+										Processador compatíveis:
+										- Soquete: LGA-1155 (aceita processadores de 3º e 2º gerações)
+										- Core i7
+										- Core i5
+										- Core i3
+										- Veja a lista completa dos processadores compatíveis.
+										
+										Memória:
+										- 2 soquetes DDR3 de 240 pinos
+										- Suporte para DDR3 2200 (O.C.) / 2133 (O.C.) / 2000 (O.C.) / 1866 (O.C.) / 1600 / 1333 / 1066 MHz
+										- Capacidade máxima de memória: 16 GB
+										- Acesse aqui para ver a lista de memorias compatíveis disponíveis em nossa loja.
+										
+										Slots de expansão:
+										- 1 slot PCI Express 3.0 x16
+										- 2 slots PCI Express 2.0 x1
+										
+										Controladores integrados:
+										- 4 controladores Serial ATA II (SATA II-3.0 Gb/s)
+										
+										Vídeo integrado:
+										- 1 porta DVI
+										- 1 porta D-Sub
+										- 1 porta HDMI
+										- Resolução máxima: 2048 x 1536 pixels
+										
+										Áudio integrado:
+										- Chipset: Realtek ALC887
+										- Sistema de 7.1 canais
+										
+										Rede integrada:
+										- Chipset: Realtek 8111F
+										- Conector: RJ-45
+										- Velocidade: 10/100/1000 Mbits/s (Mbps)
+										
+										Painel traseiro:
+										- 1 porta PS/2 para mouse
+										- 1 porta PS/2 para teclado
+										- 1 porta DVI
+										- 1 porta D-Sub
+										- 1 porta HDMI
+										- 2 portas USB 3.0
+										- 2 portas USB 2.0
+										- 1 porta RJ-45
+										- 3 conectores mini-jack de áudio
+										
+										Conectores internos:
+										- 1 Fonte ATX 24 pinos
+										- 1 ATX 12 V com 4 pinos
+										- 4 SATA 3 Gb/s
+										- 3 USB 2.0
+										- 1 CPU Fan
+										- 1 Chassis Fan</p>
+								
+								
+								</div></div>
+
+								<div>
+
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>
+						
+								</div>
+
+								
+
+							</div>
+					</div>
+
+					<div class="col-4">
+							<div class="caixa">
+								<img src="imagem/3.png" width="700" height="300">
+
+								<h4 style="text-align: center;">Placa Mãe GigaByte</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+
+								<p>Características:
+
+										- Marca: Gigabyte
+										
+										- Modelo: GA-H110M-S2PH DDR4
+										
+										 
+										
+										Especificações: 
+										
+										 
+										
+										CPU Suportado:
+										
+										- Suporte para 6ª Geração Intel Core i7 / Intel Core i5 / Intel Core i3 / Intel Pentium processadores / Intel Celeron processadores no pacote LGA1151 
+										
+										- Cache L3 varia com CPU
+										
+										 
+										
+										Chipset:
+										
+										- Intel Express Chipset H110
+										
+										 
+										
+										Memória:
+										
+										- 2 x soquetes DIMM DDR4 que suportam até 32 GB de memória do sistema 
+										
+										- Arquitetura de memória dual channel
+										
+										- Suporte para DDR4 2133MHz módulos de memória 
+										
+										- Suporte para módulos de memória ECC UDIMM 1Rx8 / 2Rx8 (operar em modo não-ECC)
+										
+										- Suporte para módulos de memória não-ECC UDIMM 1Rx8 / 2Rx8
+										
+										 
+										
+										Gráficos Onboard:
+										
+										- 1 x porta D-Sub, suportando uma resolução máxima de 1920x1200 @ 60 Hz 
+										
+										- 1 x porta HDMI, suportando uma resolução máxima de 4096x2160 @ 24 Hz 
+										
+										- Máximo de memória compartilhada de 512 MB
+										
+										 
+										
+										Áudio:
+										
+										- Realtek codec ALC887
+										
+										- Áudio de Alta Definição
+										
+										- 2/4/5.1/7.1 canais 
+										
+										- Suporte para S / PDIF
+										
+										 
+										
+										LAN:
+										
+										- Realtek chip de GbE LAN (10/100/1000 Mbit)
+										
+										 
+										
+										Slots de expansão:
+										
+										- Slot x16 1 x PCI Express, rodando em x16
+										
+										- 1 x slot PCI Express x1 
+										
+										- 2 x slots PCI
+										
+										 
+										
+										Interface de Armazenamento:
+										
+										- 4 x conectores SATA 6 Gb / s
+										
+										 
+										
+										USB:
+										
+										Chipset:
+										
+										- 6 x portas USB 2.0/1.1 (2 portas no painel traseiro, 4 portas disponíveis através dos conectores internos USB)
+										
+										- 4 x portas USB 3.0/2.0 (2 portas no painel traseiro, 2 portas disponíveis através dos conectores internos USB)
+										
+										 
+										
+										Conectores Internos I/O:
+										
+										- 1 x conector de alimentação principal ATX de 24 pinos
+										
+										- 1 x 8 pinos conector de alimentação ATX 12V
+										
+										- 4 x conectores x SATA 6Gb / s
+										
+										- 1 x conector de ventoinha CPU
+										
+										- 1 x conector do ventilador do sistema
+										
+										- 1 x cabeçalho do painel frontal
+										
+										- 1 x conector de áudio do painel frontal
+										
+										- 1 x S / PDIF
+										
+										- 1 x cabeçalho 3.0/2.0 USB
+										
+										- 2 x conectores USB 2.0/1.1
+										
+										- 1 x conector de porta serial
+										
+										- 1 x Clear CMOS 
+										
+										 
+										
+										Conectores Painel Traseiro:
+										
+										- 1 x PS / 2 porta de teclado / mouse
+										
+										- 1 x porta D-Sub
+										
+										- 1 x porta paralela
+										
+										- 1 x porta serial
+										
+										- 1 x porta HDMI
+										
+										- 2 x portas USB 3.0/2.0
+										
+										- 2 x portas USB 2.0/1.1
+										
+										- 1 x porta RJ-45
+										
+										- 3 x conectores de áudio (Line In / Line Out / Microfone) 
+										
+										 
+										
+										Controlador I/O:
+										
+										- iTE ® I / O Controller Chip
+										
+										 
+										
+										Monitoramento H/W:
+										
+										- Detecção de tensão do sistema
+										
+										- Detecção de temperatura CPU / Sistema
+										
+										- Detecção de velocidade do ventilador CPU / Sistema
+										
+										- Aviso de sobreaquecimento do CPU
+										
+										- Ventoinha do CPU / Sistema falhar aviso
+										
+										- Controle de velocidade da ventoinha do CPU / Sistema 
+										
+										 
+										
+										BIOS:
+										
+										- 2 x 64 Mbit Flash
+										
+										- Uso de BIOS AWARD licenciados
+										
+										- Suporte para DualBIOS ™
+										
+										- PnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0
+										
+										 
+										
+										Recursos exclusivos:
+										
+										- Suporte para @ BIOS
+										
+										- Suporte para Q-Flash
+										
+										- Suporte para Xpress Install
+										
+										- Suporte para Smart Switch
+										
+										 
+										
+										Sistema Operacional:
+										
+										- Suporte para Windows 7/8.1/10
+										
+										 
+										
+										Form Factor:
+										
+										- Micro ATX; 24,4cm x 18,0 centímetros
+										
+										 
+										
+										Conteúdo da embalagem:
+										
+										- Placa-Mãe GIGABYTE
+										
+										- Cabo SATA
+										
+										- Driver
+										
+										- I/O Shield
+										
+										- Manual do usuário
+										</p>
+								
+
+								</div></div>
+
+								<div>
+
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>
+						
+								</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+
+							<div class="caixa">
+								<img src="imagem/7.jpg" width="700" height="300">
+
+								<h4 style="text-align: center;">Placa Mãe ASRock</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+
+								<p>Marca
+										Asrock
+										
+										Modelo
+										B250 GAMING K4
+										
+										CPU
+										Suporta Processadores Intel® Core ™ i7 / i5 / i3 / Pentium® / Celeron® de 7ª e 6ª Geração (Soquete 1151)
+										Digi Power design
+										8 Projeto de Fase de Potência
+										Suporta a tecnologia Intel® Turbo Boost 2.0
+										
+										Chipset
+										Intel® B250
+										
+										Memória
+										Tecnologia de Memória de canal duplo DDR4
+										4 x slots DIMM DDR4
+										Suporta DDR4 2400/2133 não-ECC, memória não-buffered
+										Suporta módulos de memória UDIMM ECC (opera em modo não-ECC)
+										Máxima Capacidade da memória do sistema: 64 GB
+										Suporta o Intel® Extreme Memory Profile (XMP) 2.0
+										Contato de ouro de 15μ em slots DIMM
+										
+										BIOS
+										128Mb AMI UEFI Legal BIOS com suporte GUI multilíngüe
+										Eventos de ativação compatíveis com ACPI 6.0
+										SMBIOS 2.7 Suporte
+										CPU, GT_CPU, DRAM, VPPM, PCH 1.0V, VCCIO, VCCST, VCCSA, VCCPLL Voltagem Multi-ajuste
+										Gráficos
+										Suporta Gráficos Intel® HD Visuals Integrados: Intel® Quick Sync Video com AVC, MVC (S3D) e MPEG-2 Full HW Encode1, Intel® InTru ™ 3D, Intel® Clear Video HD Tecnologia, Intel® Insider ™, Intel® Gráficos HD
+										Gen9 LP, DX11.3, DX12
+										Codificação / decodificação HWA: VP8, HEVC 8b, VP9, ​​HEVC 10b (para a 7ª geração da CPU Intel®)
+										HWA Encode / Decode: VP8, HEVC 8b; GPU / SWEncode / Decode: VP9, ​​HEVC 10b (Para a 6ª geração da CPU Intel®)
+										Máx. Memória compartilhada 1024MB
+										Três opções de saída gráfica: D-Sub, DVI-D e HDMI
+										Suporta Triple Monitor
+										Suporta HDMI com máx. Resolução até 4K x 2K (4096x2160) @ 24Hz / (3840x2160) @ 30Hz
+										Suporta DVI-D com máx. Resolução até 1920x1200 @ 60Hz
+										Suporta D-Sub com max. Resolução até 1920x1200 @ 60Hz
+										Suporta Auto Lip Sync, Deep Color (12bpc), xvYCC e HBR (High Bit Rate Audio) com porta HDMI (compatível com o monitor HDMI é necessário)
+										Suporta HDCP com portas DVI-D e HDMI
+										Suporta reprodução Full HD 1080p Blu-ray (BD) com portas DVI-D e HDMI
+										
+										Áudio
+										7.1 Áudio CH HD com Proteção de Conteúdo (Realtek ALC1220 Audio Codec)
+										Suporte premium para Blu-ray Audio
+										Suporta proteção contra surtos (ASRock Full Spike Protection)
+										Nichicon Fine Gold Series Audio Caps
+										120dB SNR DAC com Amplificador Diferencial
+										Amplificador de Headset Premium TI® NE5532 para Conector de Áudio do Painel Frontal (Suporta até headset de 600 Ohm)
+										Potência pura
+										Tecnologia de direção direta
+										Blindagem de isolamento de PCB
+										Detecção de Impedância na porta Front Out
+										Camadas de PCB individuais para canal de áudio R / L
+										LED AURA RGB
+										Jaques de Áudio de Ouro
+										Conector de Áudio Gold de 15μ
+										Suporta Creative Sound Blaster ™ Cinema 3
+										
+										LAN
+										Gigabit LAN 10/100/1000 Mb/s
+										Giga PHY Intel® I219V
+										Suporta Wake-On-LAN
+										Suporta proteção Lightning / ESD (Proteção ASRock Full Spike)
+										Suporta Energy Efficient Ethernet 802.3az
+										Suporta PXE
+										
+										Slots de Expansão
+										2 x PCI Express 3.0 x16 Slots (PCIE2: modo x16, PCIE4: modo x4)
+										4 x PCI Express 3.0 x1 Slots (Flexível PCIe)
+										Suporta AMD Quad CrossFireX™ e CrossFireX™
+										1 x M.2 Soquete (Chave E), suporta módulo 2230 WiFi / BT
+										15μ Contato de Ouro no Slot PCIe VGA (PCIE2)
+										
+										Armazenamento
+										6 x SATA3 6.0 Gb / s Conectores, suporte NCQ, AHCI e Hot Plug
+										1 x M2 Ultra M2 (M2_1), suporta M Tipo de chave 2230/2242/2260/2280 M.2 Módulo SATA3 6.0 Gb / s e M.2 Módulo PCI Express até Gen3 x4 (32 Gb / s)
+										1 x M.2 Soquete (M2_2), suporta M Tipo de chave 2230/2242/2260/2280 M.2 Módulo SATA3 6.0 Gb / s e M.2 Módulo PCI Express até Gen3 x2 (16 Gb / s)
+										Suporta a tecnologia Intel® Optane ™ (somente M2_1)
+										Suporta SSD NVMe como discos de inicialização
+										
+										Conectores Internos
+										1 x cabeçalho da porta COM
+										1 x cabeçalho TPM
+										1 x Chassis Intrusion Header
+										1 x LED de alimentação e cabeçalho de alto-falante
+										1 x AURA RGB LED Header *
+										1 x conector do ventilador da CPU (4 pinos) **
+										2 x conectores do ventilador do chassi (4 pinos) (Smart Fan Speed ​​Control)
+										1 x Chassis Opcional / Conector do ventilador da bomba de água (4 pinos) (Smart Fan Speed ​​Control) ***
+										1 x conector de alimentação ATX de 24 pinos (conector de alimentação de alta densidade)
+										1 x conector de alimentação de 12 pinos 12V (conector de alimentação de alta densidade)
+										1 x conector de áudio do painel frontal (Conector de áudio de 15μ de ouro)
+										1 x conector Thunderbolt ™ AIC (5 pinos)
+										1 x conector Thunderbolt ™ AIC (10 pinos) ****
+										3 x conectores USB 2.0 (Suporta 5 portas USB 2.0) (Suporta Proteção ESD (ASRock Full Spike Protection))
+										1 x cabeçalho USB 3.0 (Suporta 2 portas USB 3.0) (Suporta proteção ESD (ASRock Full Spike Protection))
+										
+										Painel Traseiro
+										2 x portas de antena
+										1 x Porta PS / 2 Mouse / Teclado
+										1 x porta D-Sub
+										1 x porta DVI-D
+										1 x porta HDMI
+										1 x porta de saída óptica SPDIF
+										1 x porta USB 2.0 (Suporta Proteção ESD (ASRock Full Spike Protection))
+										1 x Fatal1ty Mouse Port (USB 2.0) (Suporta ESD Protection (ASRock Full Spike Proteção))
+										3 x portas USB 3.0 Tipo A (Suporta Proteção ESD (ASRock Full Spike Protection))
+										1 x USB 3.0 Tipo-C Porta (Suporta ESD Proteção (ASRock Full Spike Proteção))
+										1 x porta LAN RJ-45 com LED (LED ACT / LINK e LED SPEED)
+										Entradas Áudio HD: Alto-falante Traseiro / Central / Baixo / Linha em / Alto-falante / Microfone (Jacks de Áudio de Ouro)
+										Software e UEFI
+										
+										Programas
+										LED RGB ASRock AURA
+										ASRock Key Master
+										Carregador de APP ASRock
+										ASRock XFast LAN
+										UEFI
+										Modo ASRock EZ
+										ASRock Full HD UEFI
+										ASRock Meus Favoritos em UEFI
+										Flash instantâneo ASRock
+										ASRock Internet Flash
+										ASRock Crashless BIOS
+										Serviço Técnico ASRock UEFI
+										
+										CD de Suporte
+										Drivers, Utilitários, Software AntiVirus (Versão de Avaliação), Navegador e Barra de Ferramentas do Google Chrome
+										
+										Acessórios
+										Guia de Instalação Rápida, CD de Suporte, Protecção de E/S
+										2 x cabos de dados SATA
+										3 x parafusos x para soquetes M.2
+										
+										Monitor de Hardware
+										Sensor de Temperatura: CPU, Chassis, Chassis Opcional / Ventiladores de Bomba de Água
+										Tacômetro do ventilador: CPU, Chassis, Chassis opcional / Ventiladores da bomba de água
+										Ventilador silencioso (Ajuste automático da velocidade do ventilador do chassi pela temperatura da CPU): CPU, Chassis, Chassis Opcional / Ventiladores da bomba de água
+										Controle Multi-Velocidade do Ventilador: CPU, Chassis, Chassis Opcional / Ventiladores de Bomba de Água
+										Detecção CASE OPEN
+										Monitoramento de tensão: + 12V, + 5V, + 3.3V, CPU Vcore, DRAM, VPPM, PCH 1.0V, VCCSA, VCCST
+										
+										Formato
+										ATX, 30,5cm x 24,4cm</p>
+								
+								</div></div>
+
+								<div>
+
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>
+						
+								</div>
+							</div>
+					</div>
+			</div>
+
+			<div class="row"> <!-- linha-->
+					<div class="col-4">
+
+							<div class="caixa">
+								<img src="imagem/2.jpg" width="700" height="300">
+								
+
+								<h4 style="text-align: center;">Placa de Vídeo  GTX 760 ti</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+
+								<p>GPU Engine Specs:
+										1344CUDA Cores
+										915Graphics Clock (MHz)
+										980Processor Clock (MHz)
+										102.5Texture Fill Rate (billion/sec)
+										Memory Specs:
+										6.0 GbpsMemory Clock
+										GDDR5Memory Interface
+										2 GBStandard Memory Config
+										256-bit GDDR5Memory Interface Width
+										192.2Memory Bandwidth (GB/sec)
+										Feature Support:
+										GPU Boost, PhysX, TXAA, SHIELD-readyImportant Technologies
+										3D Vision, CUDA, DirectX 12, SLI, Adaptive VSync, FXAAOther Supported Technologies2
+										12 APIMicrosoft DirectX
+										4.2OpenGL
+										PCI Express 3.0Bus Support1
+										YesCertified for Windows 7, Windows 8
+										3-waySLI Options3
+										Yes3D Vision Ready
+										Display Support:
+										4 displaysMulti Monitor
+										4096x2160Maximum Digital Resolution4
+										2048x1536Maximum VGA Resolution
+										YesHDCP
+										YesHDMI4
+										One Dual Link DVI-I, One Dual Link DVI-D, One HDMI, One DisplayPortStandard Display Connectors
+										InternalAudio Input for HDMI
+										Standard Graphics Card Dimensions:
+										9.5 inches Length
+										4.376 inches Height
+										Dual-slotWidth
+										Thermal and Power Specs:
+										97Maximum GPU Temperature (in C)
+										170Maximum Graphics Card Power (W)
+										500Minimum System Power Requirement (W)5
+										Two 6-pinSupplementary Power Connectors
+										3D Vision Ready:
+										Yes3D Blu-Ray
+										Yes3D Gaming
+										Yes3D Photos</p>
+								
+								</div></div>
+
+								<div>
+
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>
+						
+								</div>
+
+								
+
+							</div>
+					</div>
+
+					<div class="col-4">
+							<div class="caixa">
+								<img src="imagem/8.jpg" width="700" height="300">
+
+								<h4 style="text-align: center;">Placa de Vídeo GTX 1050 ti</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+
+								<p>Caracteristicas:
+
+										- Marca: ASUS
+										
+										- Modelo: EX-GTX1050TI-O4G
+										
+										 
+										
+										Especificações:
+										
+										 
+										
+										Processador Gráfico:
+										
+										- NVIDIA GeForce GTX 1050 Ti
+										
+										- CUDA Núcleo: 768
+										
+										 
+										
+										Barramento:
+										
+										- PCI Express 3.0
+										
+										 
+										
+										Clock do processador:
+										
+										- Clock da GPU Boost: 1455 MHz
+										
+										- Clock da GPU Padrão: 1341 MHz
+										
+										 
+										
+										Memória:
+										
+										- Capacidade: 4GB
+										
+										- Tipo: GDDR5
+										
+										- Clock: 7008 MHz
+										
+										- Interface: 128-bits
+										
+										 
+										
+										Interface:
+										
+										- 1x DVI-D
+										
+										- 1x HDMI 2.0
+										
+										- 1x DP Regular
+										
+										- Suporta HDCP
+										
+										 
+										
+										Recursos:
+										
+										- OpenGL 4.5
+										
+										- DirectX 12
+										
+										- NVIDIA ANSEL
+										
+										- NVIDIA GameWorks
+										
+										- NVIDIA GPU Boost 3.0</p>
+
+								</div></div>
+
+								<div>
+
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>
+						
+								</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+
+							<div class="caixa">
+								<img src="imagem/9.jpg" width="700" height="300">
+
+								<h4 style="text-align: center;">Placa de Vídeo GTX Titan Z</h4> <!-- Centreliza text-->
+
+								<!-- Cria descrição ao clicar-->
+								<div class="divspoiler">
+								<input type="button" value="Descrição" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Descrição'; }" />
+								</div><div><div class="spoiler" style="display: none; color: #000000;">
+
+								<p>Especificações do mecanismo da GPU
+										Núcleos CUDA
+											5760
+										Base Clock
+											705 MHz
+										Boost Clock
+											876 MHz
+										Taxa de preenchimento de textura
+											338 GigaTexels/sec
+										Especificações de memória
+										Velocidade da memória ( Gbps )
+											7.0
+										Quantidade de memória
+											12 GB
+										Interface de memória
+											768-bit GDDR5
+										Largura de banda máxima
+											672 GB/sec
+										Recursos da placa
+										FXAA and TXAA
+											
+										Pronta para SLI
+											
+										3D Vision
+											
+										PhysX
+											
+										Ambiente de programação
+											CUDA
+										DirectX
+											12
+										OpenGL
+											4.4
+										Tipo de barramento
+											PCI-E 3.0
+										3D Gaming
+											
+										Blu Ray 3D
+											
+										Especificações
+										Resolução Digital Máxima
+											4096x2160
+										Resolução VGA máxima
+											2048x1536
+										Conexão de mídia
+											
+										
+											Dual Link DVI-D
+											DisplayPort
+											HDMI
+											Dual Link DVI-I
+										
+										Vários monitores
+											
+										HDCP
+											
+										HDMI
+											
+										Áudio HDMI
+											Internal
+										Dimensões
+										Altura
+											4.376 Inches
+										Comprimento
+											10.5 Inches
+										Energia e temperatura
+										Temperatura máxima
+											95 C
+										Consumo de energia
+											375 W
+										Requisito mínimo de alimentação
+											700 W (com um mínimo de 12 V corrente nominal de 42A)
+										Conexões de energia
+											8-pin x2</p>
+								
+								</div></div>
+
+								<div>
+
+									<div class="col-6" >
+										<div class="butons">
+											<button class="btn btn-danger" type="button" style="color: #000000">Comprar</button>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="butons">
+											<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com&width=180&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="180" 	height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">						
+											</iframe>
+										</div>
+									</div>
+						
+								</div>
+							</div>
+					</div>
+			</div>
+	</div>
+
+	<footer>
+		<div class="rod">
+			<span><a class="rodm" href="Index.html">Home |</a></span> 
+	        <span><a class="rodm" href="contato.html">Contato |</a></span> 
+	        <span><a class="rodm" href="#">Termos e condições |</a></span> 
+	        <span><a class="rodm" href="#">Política de Privacidade</a></span> 	    
+	        </div>
+	</footer>
+
+	<script type="text/javascript">
+		 /** Inicializa o Slider **/
+		 $(document).ready(function(){
+      		$('.slider').slider({full_width: true}); 
+    	});
+	</script>
+
+	<script type="text/javascript">
+		 /** Inicializa o Menu Responsivo **/
+		 $(".button-collapse").sideNav();
+	</script>
+
+
+
+</body>
+
+</html>

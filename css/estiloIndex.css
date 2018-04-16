@@ -1,0 +1,119 @@
+
+body{
+	margin:0;
+	background-image: url("http://www.mistralsolutions.com/wp-content/uploads/2014/03/Hardware-software.jpg");
+	
+}
+
+nav{
+	background: #049F00;
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+h1{
+	margin: 0px;
+}
+
+.centro{
+	margin: auto;
+	max-width: 1500px;
+	max-height: auto;
+	background: #FFFFFF;
+}
+
+
+.centro > h5{
+
+	text-align: center;
+}
+
+.slider{
+	margin: auto;
+	max-width: auto;
+	max-height: auto;
+}
+
+
+.linha{
+
+	text-align: center;
+	background: #049F00;
+}
+
+.caixa{
+	text-align: center;
+	padding: 30px;
+}
+
+.baixo img {
+   max-width: 100%;
+   margin-top: 10px;
+   padding: 30px;
+}
+
+.MFundo img{
+
+	margin-top: 20px;
+	max-height: -100px;
+	margin-bottom: 20px;
+	
+}
+.MFundo p{
+
+	margin-left: 20px;
+	
+}
+
+footer {
+    clear: both;
+    padding-top: 20px;
+    bottom: 0px;
+    background-color: #049F00;
+    width: 100%;
+    position: relative;
+   	margin-top: 10px;
+    text-align: center;
+
+    box-shadow: 0px 0px 1em #666;
+    -webkit-box-shadow: 0px 0px 1em #666;
+    -moz-box-shadow: 0px 0px 1em #666;
+}
+
+footer .rod{
+
+	margin: auto;
+	max-width: 1000px;
+	max-height: auto;
+}
+
+footer .rodm{
+
+	margin: auto;
+	color: black;
+    
+    font-size: 16px;
+}
+    
+
+html,body        {height:100%;}
+.wrapper         {width:80%;height:100%;margin:0 auto;background:#CCC}
+.h_iframe        {position:relative;}
+.h_iframe .ratio {display:block;width:100%;height:auto;}
+.h_iframe iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

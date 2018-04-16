@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contato</title>
+	<link rel="icon" href="imagem/logo.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>  <!-- CSS do materialize-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estiloContato.css"/>
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script> <!-- Biblioteca para facilitar o uso de javascript-->
+	<script type="text/javascript" src="js/materialize.min.js"></script>  <!-- Biblioteca JS do materialize-->
+</head>
+
+<body background="imagem/back1.png">
+	<style>
+	* {box-sizing: border-box;}
+
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.topnav .search-container {
+	  float: left;
+	}
+
+
+	@media screen and (max-width: 600px) {
+	  .topnav .search-container {
+	    float: none;
+	  }
+	  .topnav input[type=text] {
+	    border: 1px solid #ccc;  
+	  }
+	}
+	</style>
+	</head>
+	<body>
+
+	<div class="topnav">
+	  <div class="search-container">
+	    <form action="/action_page.php">
+	      <input type="text" style= "color: #000000;" placeholder="Procurar.." name="Procurar">
+	    </form>
+	  </div>
+	</div>
+
+
+	<nav>
+	  <!-- Lista de menus para Desktop -->
+	  <ul class="right hide-on-med-and-down">
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="Produtos.html">Produtos</a></li>
+	    <li><a href="mapa.html">Mapa</a></li>
+	    <li><a href="contato.html">Contato</a></li>
+	  </ul>
+
+	  <!-- Lista de menus para Mobile -->
+	  <ul id="slide-out" class="side-nav">
+	   	<li><a href="index.html">Home</a></li>
+	    <li><a href="Produtos.html">Produtos</a></li>
+	    <li><a href="mapa.html">Mapa</a></li>
+	    <li><a href="contato.html">Contato</a></li>
+	  </ul>
+	  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+	</nav>
+
+	<div class="centroContato">
+
+		 
+		<form id="form" method="POST"> 
+			
+			<label><h5>Contato</h5></label>
+
+			<div>
+
+				<label>Nome:</label>
+				<input  class="field" required="required" type="text" size="30" name="nome" placeholder="Digite seu nome"> 
+
+			</div> 
+
+			<div>
+
+				<label>E-mail:</label>
+				<input  class="field" required="required" type="text" size="30" name="email" placeholder="Digite seu e-mail"> 
+
+			</div> 
+
+			<div>
+
+				<label>Telefone:</label>
+				<input  class="field" required="required" type="text" size="30" name="telefone" placeholder="Digite seu telefone"> 
+
+			</div>
+
+			<div>
+
+				<label>Assunto:</label>
+				<input  class="field" required="required" type="text" size="30" name="assunto" placeholder="Digite o assunto"> 
+
+			</div>
+
+			<div>
+
+				<label>Mensagem:</label>
+				<textarea class="message" name="feedback" id="feedback" width="100" height="100"></textarea>
+				
+
+			</div>
+			
+			<div>
+				<label>Deseja receber novidades do site?</label>
+			</div>
+
+			<div class="radio">
+			    <input id="Sim" type="radio" name="gender" value="Sim">
+			    <label for="Sim">Sim</label>
+			    <input id="Não" type="radio" name="gender" value="Não">
+			    <label for="Não">Não</label>
+			</div>
+
+			<div>
+				
+				<input type="reset" class="button" value="Apagar">
+				<input type="submit" class="button" value="Enviar"> 
+
+			</div>
+			 
+			</form>
+	</div>
+
+	<footer>
+		<div class="rod">
+			<span><a class="rodm" href="Index.html">Home |</a></span> 
+	        <span><a class="rodm" href="contato.html">Contato |</a></span> 
+	        <span><a class="rodm" href="#">Termos e condições |</a></span> 
+	        <span><a class="rodm" href="#">Política de Privacidade</a></span> 
+	    </div>
+	</footer>
+
+	<script type="text/javascript">
+		 /** Inicializa o Menu Responsivo **/
+		 $(".button-collapse").sideNav();
+	</script>
+
+</body>
+</html>
